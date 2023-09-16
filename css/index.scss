@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@100;400;700&display=swap');
+
+$h1-bg: #2AB3B1;
+$btn_sign_up: #C0DF33;
+$community-paragraph: #9AA7BE;
+$other_text: white;
+$body_bg: #E6EFF5;
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $h1-bg;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Karla';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: $body_bg;
+  color: $other_text;
+  margin: 0px;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 635px;
+      border-radius: 8px;
+      box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+      overflow: hidden;
+
+      .text_community {
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        height: 100%;
+        background-color: $other_text;
+
+        h1 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: normal;
+          margin: 0px;
+          margin-bottom: 24px;
+          letter-spacing: -0.3px;
+          color: $h1-bg;
+        }
+
+        h2 {
+          color: $btn_sign_up;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.225px;
+          margin: 0px;
+          margin-bottom: 11px;
+        }
+
+        p {
+          color: $community-paragraph;
+          line-height: 26px;
+          letter-spacing: -0.2px;
+          margin: 0px;
+        }
+
+      }
+
+      .monthly-why_us {
+        display: flex;
+        background-color: $h1-bg;
+        width: 100%;
+
+        .monthly {
+          padding: 40px 40px 39px 40px;
+          background-color: $h1-bg;
+          width: 50%;
+
+          h2 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.225px;
+            margin: 0px;
+            margin-bottom: 18px;
+          }
+
+          .promotion {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 4px;
+
+            .cost {
+              font-size: 32px;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: -0.4px;
+            }
+
+            .period {
+              line-height: 26px;
+              letter-spacing: -0.2px;
+              opacity: .5;
+            }
+
+          }
+
+          p {
+            line-height: 26px;
+            letter-spacing: -0.2px;
+            margin: 0px;
+            margin-bottom: 26px;
+          }
+
+          a {
+            text-decoration: none;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.2px;
+            color: $other_text;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            background-color: $btn_sign_up;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+            padding-top: 15px;
+            padding-bottom: 14px;
+          }
+        }
+
+        .why_us {
+          padding: 40px;
+          width: 50%;
+          background: rgba(255, 255, 255, .1519);
+
+          h2 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.225px;
+            margin: 0px;
+            margin-bottom: 18px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.175px;
+            opacity: 0.75;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 375px) {
+
+    main {
+      height: auto;
+
+
+      .container {
+
+        justify-content: center;
+        width: 311px;
+        margin: 24px auto;
+        border-radius: 0px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+
+
+
+        .text_community {
+          padding: 28px 24px 32px 24px;
+
+          h1 {
+            font-size: 20px;
+            letter-spacing: -0.25px;
+            margin-bottom: 24px;
+          }
+
+          h2 {
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.187px;
+            margin: 0px;
+            margin-bottom: 16px;
+          }
+
+
+
+
+          p {
+            font-size: 14px;
+            letter-spacing: -0.175px
+          }
+
+        }
+
+        .monthly-why_us {
+          flex-direction: column;
+
+          .monthly {
+            padding: 24px;
+
+            width: 100%;
+          }
+
+          .why_us {
+            padding: 24px;
+            padding-right: 49px;
+            width: 100%;
+            background: rgba(255, 255, 255, .1519);
+
+
+
+        }
+
+      }
+    }
+  }
+}
+}
